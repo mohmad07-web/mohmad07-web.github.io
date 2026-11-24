@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<title>ELTRKI | مرحبًا بك</title>
+<style>
+:root { color-scheme:light; --ink:#302b23; --muted:#716b60; --gold:#8b652b; --line:#e9e0d1; }
+* { box-sizing:border-box; }
+body { margin:0; min-height:100vh; min-height:100svh; display:grid; place-items:center; padding:40px 24px; background:radial-gradient(ellipse at 15% 15%,#f9f4e9 0,transparent 50%),radial-gradient(ellipse at 90% 100%,#e8dcc4 0,transparent 55%),#f1eadd; color:var(--ink); font-family:Tahoma,Arial,sans-serif; }
+.shell { width:min(100%,960px); }
+.topbar { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:20px; padding:0 4px; }
+.brand { font:700 19px/1.3 Arial,sans-serif; letter-spacing:3px; display:flex; align-items:center; gap:10px; }
+.brand svg { color:var(--gold); }
+.topnote { font-size:12px; color:var(--muted); }
+.card { display:grid; grid-template-columns:0.95fr 1.05fr; background:#fffdf8; border:1px solid #fff; border-radius:26px; overflow:hidden; box-shadow:0 24px 65px #4a3b2015; }
+.welcome { background:#e9dfcc; padding:42px 34px; position:relative; overflow:hidden; display:flex; flex-direction:column; }
+.welcome:before { content:""; position:absolute; width:270px; height:270px; border:1px solid #a88d5b35; border-radius:50%; left:-135px; top:30px; pointer-events:none; }
+.eyebrow { margin:0 0 18px; font-size:12px; letter-spacing:1px; color:#655034; }
+h1 { font-size:36px; line-height:1.55; font-weight:700; margin:0; max-width:300px; }
+.english { font:14px/1.7 Arial,sans-serif; color:#6e604b; margin:10px 0 30px; }
+.pricing { position:relative; margin-top:auto; background:#ffffff94; border:1px solid #ffffffb8; padding:22px; border-radius:17px; }
+.pricehead { display:flex; justify-content:space-between; gap:10px; align-items:center; }
+.pricehead h2 { margin:0; font-size:17px; }
+.badge { border-radius:6px; background:#f0e4ca; color:#70511f; font-size:12px; font-weight:bold; padding:7px 9px; white-space:nowrap; }
+.price { margin:23px 0 15px; display:flex; align-items:baseline; gap:8px; }
+.price strong { font:700 52px/1 Arial,sans-serif; letter-spacing:-2px; }
+.price span { color:#655d4f; font-size:14px; }
+.pricefoot { margin:0; padding-top:14px; border-top:1px solid #b8a68960; color:#71634e; font-size:11px; line-height:1.9; }
+.formside { padding:42px 38px 30px; }
+.formside h2 { margin:0 0 8px; font-size:25px; }
+.intro { color:var(--muted); font-size:13px; line-height:1.9; margin:0 0 25px; }
+.field { margin:0 0 17px; }
+label { display:block; font-size:13px; font-weight:700; margin:0 0 8px; }
+label small { font:11px Arial,sans-serif; color:#797164; margin-inline-start:5px; font-weight:400; }
+input { display:block; width:100%; min-width:0; height:49px; padding:12px 14px; color:var(--ink); background:#fff; border:1px solid #ddd5c6; border-radius:8px; font:13px Tahoma,Arial,sans-serif; outline:none; }
+input:focus { border-color:var(--gold); box-shadow:0 0 0 3px #ad8a4d20; }
+input::placeholder { color:#8d867a; opacity:1; }
+input[readonly] { cursor:default; background:#faf8f3; }
+button { display:flex; align-items:center; justify-content:center; gap:12px; width:100%; min-height:49px; border:0; border-radius:8px; background:#81602f; color:white; cursor:pointer; font:700 14px Tahoma,Arial,sans-serif; transition:background .15s; }
+button:hover { background:#63471e; }
+button:focus-visible,a:focus-visible { outline:3px solid #b5955d; outline-offset:4px; }
+.demo { font-size:11px; line-height:1.9; color:var(--muted); margin:13px 0 19px; }
+#status { margin:0 0 15px; padding:10px 12px; background:#f1ede4; border-radius:8px; color:#554b3c; font-size:12px; line-height:1.9; }
+#status:empty { display:none; }
+.google { border-top:1px solid var(--line); padding-top:18px; display:flex; justify-content:center; }
+a { color:#6e522b; text-underline-offset:4px; font-size:12px; }
+footer { text-align:center; color:#7d7260; font:11px/1.8 Arial,sans-serif; padding-top:20px; letter-spacing:1px; }
+@media(max-width:680px) { body{padding:24px 16px;} .topbar{margin-bottom:15px;} .card{grid-template-columns:1fr;border-radius:21px;} .welcome{padding:28px 24px;} h1{font-size:29px;max-width:none;} .eyebrow{margin-bottom:10px;} .english{margin:6px 0 22px;font-size:12px;} .pricing{padding:17px 18px;} .price{margin:16px 0 13px;} .price strong{font-size:42px;} .formside{padding:28px 24px 24px;} .formside h2{font-size:23px;} .topnote{font-size:10px;} }
+@media(prefers-reduced-motion:reduce) { * { transition:none!important; } }
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="topbar"><div class="brand" dir="ltr"><svg aria-hidden="true" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19V5h14M4 12h11M4 19h14"/><path d="M20 4v16"/></svg>ELTRKI</div><span class="topnote">بساطة في كل تفصيلة</span></header>
+<section class="card" aria-label="مرحبًا بك في ELTRKI">
+<div class="welcome">
+<p class="eyebrow">أهلًا بيك في ELTRKI</p>
+<h1>بداية بسيطة،<br>وشكل يليق بيك.</h1>
+<p class="english" dir="ltr">Hello to eltrki.com</p>
+<section class="pricing" aria-label="أسعارنا، محتوى تجريبي">
+<div class="pricehead"><h2>أسعارنا</h2><span class="badge">خصم 20%</span></div>
+<div class="price"><strong>200</strong><span>جنيه مصري</span></div>
+<p class="pricefoot">الخدمة: الغرفة<br>بيانات تجريبية من التصميم الأصلي، وليست عرض حجز.</p>
+</section>
+</div>
+<div class="formside">
+<h2>مرحبًا بك</h2>
+<p class="intro">نموذج بتصميم بسيط وواضح.<br>الحقول للمعاينة فقط، مش لإنشاء حساب.</p>
+<form onsubmit="return false" autocomplete="off">
+<div class="field"><label for="name">الاسم <small lang="en" dir="ltr">Name</small></label><input id="name" type="text" placeholder="اسمك هنا" readonly aria-readonly="true"></div>
+<div class="field"><label for="email">البريد الإلكتروني <small lang="en" dir="ltr">Email</small></label><input id="email" type="text" placeholder="name@example.com" dir="ltr" readonly aria-readonly="true"></div>
+<div class="field"><label for="password">كلمة المرور <small lang="en" dir="ltr">Password</small></label><input id="password" type="password" placeholder="للمعاينة فقط" readonly aria-readonly="true"></div>
+<button id="start" type="button">ابدأ الآن <span aria-hidden="true">←</span></button>
+<p class="demo">نسخة شكلية فقط. لا تُرسل أو تُحفظ أي بيانات، ولا يوجد تسجيل حسابات متصل حاليًا.</p>
+<p id="status" role="status" aria-live="polite"></p>
+</form>
+<div class="google"><a href="https://www.google.com/" target="_blank" rel="noopener noreferrer">زيارة Google ↗</a></div>
+</div>
+</section>
+<footer dir="ltr">ELTRKI · hello, today.</footer>
+</main>
+<script>
+document.getElementById('start').addEventListener('click',function(){document.getElementById('status').textContent='دي معاينة للتصميم فقط. إنشاء الحسابات يحتاج ربطًا آمنًا بخدمة تسجيل حقيقية.';});
+</script>
+</body>
+</html>
